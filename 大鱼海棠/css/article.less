@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+/*YUI reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5 tahoma, arial;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+i, em {
+  font-style: normal;
+}
+
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+  outline: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/*end YUI reset*/
+body {
+  background-color: #f1f1f1;
+}
+
+.main {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.header {
+  height: 200px;
+}
+
+.header img {
+  float: left;
+}
+
+.header img.fr {
+  float: right;
+}
+
+.nav {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #e3e4e8;
+}
+
+.nav a {
+  padding: 0 50px;
+  font-size: 16px;
+  color: #3f4a87;
+  display: inline-block;
+  &.on{
+    background: #3f4a87;
+    color: #fff;
+  }
+}
+
+.hot {
+  overflow: hidden;
+  margin-bottom: 20px;
+  h2 {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 2em;
+    font-size: 16px;
+  }
+  .hot-left {
+    float: left;
+    width: 400px;
+    ul {
+      padding-left: 20px;
+      li {
+        height: 120px;
+        img {
+          float: left;
+        }
+        p {
+          float: right;
+          width: 180px;
+          padding-top: 10px;
+        }
+      }
+    }
+
+  }
+  .hot-right {
+    float: right;
+    width: 500px;
+    height: 360px;
+    img {
+      height: 360px;
+    }
+  }
+}
+
+.fengjing {
+  overflow: hidden;
+  background-color: #e3e4e8;
+  .fj-left {
+    float: left;
+    width: 300px;
+    h2 {
+      height: 40px;
+      line-height: 40px;
+      text-indent: 2em;
+      font-size: 16px;
+    }
+    p {
+      line-height: 44px;
+      padding: 0 20px;
+    }
+  }
+  .fj-right{
+    float: right;
+    width: 640px;
+    h2 {
+      height: 40px;
+      line-height: 40px;
+      text-indent: 2em;
+      font-size: 16px;
+    }
+    ul{
+      overflow: hidden;
+      li{
+        float: left;
+        width: 50%;
+        margin-bottom: 10px;
+        p{
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+.footer{
+  text-align: center;
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.fjcon{
+  overflow: hidden;
+  padding: 10px;
+  border-bottom: 2px solid #e3e4e8;
+  .fjcon-left{
+    float: left;
+    width: 48%;
+  }
+  .fjcon-right{
+    float: right;
+    width: 48%;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+  p{
+    line-height: 28px;
+    padding: 20px;
+  }
+  &.bg{
+    background: #e3e4e8;
+  }
+}
+.meishi{
+  padding: 10px;
+  .pic{
+    width: 100%;
+    overflow: hidden;
+    img{
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
+  }
+  .meishicon{
+    overflow: hidden;
+    padding-bottom: 10px;
+    h2{
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 16px;
+    }
+    p{
+      line-height: 28px;
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+    img{
+      width: 25%;
+      float: left;
+    }
+  }
+}
+.gonglue{
+  overflow: hidden;
+  border-bottom: 1px solid #3f4a87;
+  .gl-left{
+    float: left;
+    width: 200px;
+
+    a{
+      display: block;
+      line-height: 40px;
+      background-color:#3f4a87;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .gl-right {
+    float: right;
+    width: 720px;
+    ul{
+      padding: 20px;
+      li{
+        overflow: hidden;
+        margin-bottom: 20px;
+        img{
+          float: left;
+        }
+        p{
+          float: left;
+          padding-top: 50px;
+          font-size: 14px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+.tuijiancon{
+  border-bottom: 1px solid #e3e4e8;
+  ul{
+    li{
+      overflow: hidden;
+      padding: 20px;
+      &.bg{
+        background: #e3e4e8;
+      }
+      img{
+        float: left;
+        margin-right: 20px;
+      }
+      p{
+        float: left;
+        padding-left: 20px;
+      }
+      h2{
+        line-height: 40px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+
+
+

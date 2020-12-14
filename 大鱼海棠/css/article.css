@@ -1,0 +1,280 @@
+body {
+    background-color: #f1f1f1; 
+    background:url(../images/bj.jpg) repeat fixed!important;
+}
+.main { 
+    padding:15px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.header {
+    width:960px; 
+    height:282px;
+}
+.header img {
+    float: left;
+}
+.header img.fr {
+    float: right;
+}
+.nav {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #e3e4e8;
+}
+.nav a {
+    padding: 0 30px; text-decoration:none;
+    font-size: 16px;
+    color: #3f4a87;
+    display: inline-block;
+}
+.nav a.on {
+    background: #3f4a87;
+    color: #fff;
+}
+.hot {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.hot h2 {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 2em;
+    font-size: 16px;
+}
+.hot .hot-left {
+    float: left;
+    width: 400px;
+}
+.hot .hot-left ul {
+    padding-left: 20px;
+}
+.hot .hot-left ul li {
+    height: 120px;
+}
+.hot .hot-left ul li img {
+    float: left;
+}
+.hot .hot-left ul li p {
+    float: right;
+    width: 180px;
+    padding-top: 10px;
+}
+.hot .hot-right {
+    float: right;
+    width: 500px;
+    height: 360px;
+}
+.hot .hot-right img {
+    height: 360px;
+}
+.fengjing {
+    overflow: hidden;
+    background-color: #e3e4e8;
+}
+.fengjing .fj-left {
+    float: left;
+    width: 300px;
+}
+.fengjing .fj-left h2 {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 2em;
+    font-size: 16px;
+}
+.fengjing .fj-left p {
+    line-height: 44px;
+    padding: 0 20px;
+}
+.fengjing .fj-right {
+    float: right;
+    width: 640px;
+}
+.fengjing .fj-right h2 {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 2em;
+    font-size: 16px;
+}
+.fengjing .fj-right ul {
+    overflow: hidden;
+}
+.fengjing .fj-right ul li {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.fengjing .fj-right ul li p {
+    line-height: 30px;
+}
+.footer {
+    text-align: center;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.fjcon {
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 2px solid #e3e4e8;
+}
+.fjcon .fjcon-left {
+    float: left;
+    width: 48%;
+}
+.fjcon .fjcon-right {
+    float: right;
+    width: 48%;
+}
+.fjcon img {
+    display: block;
+    width: 100%;
+}
+.fjcon p {
+    line-height: 28px;
+    padding: 20px;
+}
+.fjcon.bg {
+    background: #e3e4e8;
+}
+.neirong {
+    padding: 10px;
+}
+.all{
+    width: 440px;
+    height: 440px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 100px auto;
+    position: relative;
+}
+.screen{
+    width: 440px;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+.screen li{
+    width: 440px;
+    height: 440px;
+    overflow: hidden;
+    float: left;
+}
+.screen ul{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 5720px;
+    padding-left: 20px;
+}
+#arr{
+    display: none;
+}
+#arr span{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+#arr #right{
+    right: 5px;
+    left: auto;
+}
+.neirong .pic {
+    width: 100%;
+    overflow: hidden;
+}
+.neirong .pic img {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.neirong .neirongcon {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.neirong .neirongcon h2 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.neirong .neirongcon p {
+    line-height: 28px;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.neirong .neirongcon img {
+    width: 25%;
+    float: left;
+}
+.gonglue {
+    overflow: hidden;
+    border-bottom: 1px solid #3f4a87;
+}
+.gonglue .gl-left {
+    float: left;
+    width: 200px;
+}
+.gonglue .gl-left a {
+    display: block;
+    line-height: 40px;
+    background-color: #3f4a87;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+}
+.gonglue .gl-right {
+    float: right;
+    width: 720px;
+}
+.gonglue .gl-right ul {
+    padding: 20px;
+}
+.gonglue .gl-right ul li {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.gonglue .gl-right ul li img {
+    float: left;
+}
+.gonglue .gl-right ul li p {
+    float: left;
+    padding-top: 50px;
+    font-size: 14px;
+    padding-left: 20px;
+}
+.tuijiancon {
+    border-bottom: 1px solid #e3e4e8;
+}
+.tuijiancon ul li {
+    overflow: hidden;
+    padding: 20px;
+}
+.tuijiancon ul li.bg {
+    background: #e3e4e8;
+}
+.tuijiancon ul li img {
+    float: left;
+    margin-right: 20px;
+}
+.tuijiancon ul li p {
+    float: left;
+    padding-left: 20px;
+}
+.tuijiancon ul li h2 {
+    line-height: 40px;
+    font-size: 15px;
+}

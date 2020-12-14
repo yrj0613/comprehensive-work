@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>大鱼海棠</title>
+<link href="css/article.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="images/banner.jpg" alt=""  width="960" class="fr">
+        </div>
+        <div class="nav">
+            <a href="index.html">首页</a>
+            <a href="jue.html">主要角色</a>
+            <a href="huo.html">获奖记录</a>
+            <a href="tu.html" class="on">图片欣赏</a>
+            <a href="shi.html">精彩片段</a>
+            <a href="deng.html">用户登录</a>
+            <a href="zhu.html">用户注册</a>
+        </div>
+        <div class="all" id="box">
+            <div class="screen">
+                <ul>
+                    <li><img src="images/y1.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y2.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y3.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y4.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y5.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y6.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y7.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y8.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y9.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y10.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y11.jpg" width="400" height="440" /></li>
+                    <li><img src="images/y12.jpg" width="400" height="440" /></li>
+                </ul>
+            </div>
+            <div id="arr">
+                <span id="left">&lt;</span>
+                <span id="right">&gt;</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var box = document.getElementById("box");
+    var screen = document.querySelector(".screen");
+    var ul = document.querySelector("ul");
+    var olList = document.querySelectorAll("ol>li");
+    var arr = document.getElementById("arr");
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    var index = 0;
+    box.onmouseover = function(){
+        arr.style.display = "block";
+    }
+    box.onmouseout = function(){
+        arr.style.display = "none";
+    }
+    function animationSlow(ele, target){
+        clearInterval(ele.timeID);
+        ele.timeID = setInterval(function(){
+            var current = ele.offsetLeft;
+            var step = (target - current)/10;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            current += step;
+            ele.style.left = current + "px";
+            if(current == target){
+                clearInterval(ele.timrID);
+            }
+        },20);
+    }
+    right.onclick = function(){
+        if(index ==ul.children.length - 1){
+            ul.style.left = "0px";
+            index = 0;
+        }
+        index++;
+        animationSlow(ul, -screen.offsetWidth * index);
+        for(var i =0; i < olList.length; i++){
+            if(index == i){
+                olList[i].className = 'current';
+            }else {
+                olList[i].className = '';
+            }
+        }
+        if(index == ul.children.length-1){
+            olList[0].className = 'current';
+        }
+    }
+    left.onclick = function(){
+        if(index == 0){
+            ul.style.left = -(screen.offsetWidth) * (ul.children.length-1) + 'px';
+            index = ul.children.length-1;
+        }
+        index--;
+        animationSlow(ul,-screen.offsetWidth * index);
+        for(var i = 0;i<olList.length;i++){
+            if(index == i){
+                olList[i].className = 'current';
+            }else {
+                olList[i].className = '';
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大鱼海棠</title>
+<link href="css/article.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="images/banner.jpg" alt=""  width="960" class="fr">
+        </div>
+        <div class="nav">
+            <a href="index.html">首页</a>
+            <a href="jue.html">主要角色</a>
+            <a href="huo.html">获奖记录</a>
+            <a href="tu.html">图片欣赏</a>
+            <a href="shi.html">精彩片段</a>
+        <a href="deng.html" class="on">用户登录</a>
+            <a href="zhu.html">用户注册</a>
+        </div>
+        <div class="neirong"><br />
+            <h1 style="font-size:30px; font-weight:normal; text-align:center; color:#f00;">用户登录</h1>    
+            <table width="550" border="0" cellspacing="0" cellpadding="15" style="margin:20px auto; height:300px;">
+                <tr>
+                    <td>用户名</td>
+                    <td><input name="" type="text" style="width:400px; height:30px;border:1px solid #ccc;"/></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input name="" type="password" style="width:400px; height:30px;border:1px solid #ccc;"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input name="" type="checkbox" value="">记住密码</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input name="" type="button" style="width:100px; height:30px;border:1px solid #ccc;" value="登录" id="btn" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script type="text/javascript"> 
+    window.onload= function(){
+        var btn = document.getElementById("btn");
+        btn.onclick = function(){
+            var answer = confirm("登录成功，是否返回首页");
+            if(answer){
+                window.location = "index.html";
+            }
+        }
+    }
+</script> 
+</html>
